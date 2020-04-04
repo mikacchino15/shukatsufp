@@ -1,0 +1,190 @@
+body {
+    margin: 0;
+    font-family: "Hiragino Maru Gothic Pro";
+    background-color: rgba(250,250,250,1.0)
+}
+
+a {
+    text-decoration: none;
+    font-size: 25px;
+}
+
+meta {}
+
+title {}
+
+link {}
+
+
+/********************************************/
+/*                  ヘッダー 
+/********************************************/
+header {
+    height: 75px;
+    width: 100%;
+}
+
+.header-left {
+    float: left;
+    padding-left:20px;
+}
+
+.header-left h1 {
+    opacity: 1.0;
+    color: rgba(20, 70, 148, 1);
+}
+
+.header-right {
+    color: rgba(20, 70, 148, 1);
+    padding-right: 20px;
+}
+
+.company-name{
+    margin-top:10px;
+    margin-bottom:0px;
+    text-align: right;
+    font-size: 12px;
+}
+
+.tel {
+    margin-top:5px;
+    margin-bottom:5px;
+    text-align: right;
+}
+
+.business-hour{
+    margin-top:0px;
+    margin-bottom:10px;
+    text-align: right;
+    font-size: 12px;
+}
+
+
+/********************************************/
+/*           ナビゲーションバー
+/*
+/*  参考サイト：https://tech-dig.jp/dropdownmenu/
+/********************************************/
+.navigation-wrapper {
+}
+
+.navigation-container{
+    width: 100%;
+    display:flex;
+    margin:0 auto;
+}
+
+.navigation{
+    width:100%;                 /*navi-title を画面幅全体に表示するように記述 2020/3/29*/
+    cursor: pointer;
+}
+
+.navigation :hover{             /*classとhover間に半角スペースが無いとcssが反映されないので注意 20200330*/
+    display: block;
+    color: rgba(0, 0, 255, 1);
+    background-color: rgba(165,197,214,0.5);
+}
+
+.navi-title{
+    flex: auto;
+    color: rgba(20, 70, 148, 1);
+    background-color: rgba(165,197,214,1.0);
+    list-style-type: none;
+    font-size: 12px;
+    margin:auto;
+    padding:10px 60px;
+    text-align: center;
+    position:relative;          /*jQueryのslideDownで下部要素が動作しないように記述 2020/3/29*/
+/*    border:1px solid rgba(20, 70, 148, 1);*/
+}
+
+.navi{
+    display: none;
+    width:20%;
+    padding-inline-start:0px;   /*UserAgentStylesheetをNormalize.css で初期化しきれなかったため個別に記述 2020/3/29*/
+    margin:0px auto;            /*navi-title の間をなくすように記述 2020/3/29*/
+    position:absolute;          /*jQueryのslideDownで下部要素が動作しないように記述 2020/3/29*/
+}
+
+.navi li{
+    display: block;
+    color: rgba(20, 70, 148, 1);
+    background-color: rgba(165,197,214,1.0);
+    list-style-type: none;
+    font-size: 12px;
+    margin:0px auto;            /*marginで確保した領域にbackground-colorは反映されない 20200330*/
+    padding:10px 40px;
+    text-align: left;
+/*    z-index: auto;*/
+}
+
+
+
+/********************************************/
+/*                   メイン   
+/********************************************/
+.main-wrapper {
+    height:400px;
+}
+
+
+
+
+
+/********************************************/
+/*                  フッター
+/********************************************/
+footer {
+    width:100%;
+    height:170px;
+    border-top:1px solid #b3aeb5;
+    background-color: rgba(204,204,204,1.0);
+}
+
+
+.footer-menu{
+    display: flex;
+    width: 100%;
+    cursor: pointer;
+}
+
+.footer-menu :hover{
+    display: block;
+    color: rgba(0, 0, 255, 1);
+    background-color: rgba(204,204,204,0.8);
+}
+
+.footer-menu-list{
+    flex: auto;
+}
+
+.footer-menu-list li{
+    float: left;
+    color: rgba(20, 70, 148, 1);
+    font-size: 12px;
+    list-style-type: none;
+    padding :10px 60px;
+    text-align: center;
+}
+
+.footer-logo {
+    float: left;
+    padding-left: 20px;
+    color: rgba(20, 70, 148, 1);
+}
+
+
+.footer-right{
+    color: rgba(20, 70, 148, 1);
+    padding-right: 20px;
+}
+
+.footer-right p{
+    font-size: 12px;
+}
+
+.copy-right{
+    color: rgba(20, 70, 148, 1);
+    font-size: 12px;
+    text-align: center;
+}
