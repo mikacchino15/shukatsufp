@@ -1,0 +1,56 @@
+@font-face {
+    font-family: 'icomoon';
+    src: url('fonts/icomoon.eot?ivk6cg');
+    src: url('fonts/icomoon.eot?ivk6cg#iefix') format('embedded-opentype'),
+        url('fonts/icomoon.ttf?ivk6cg') format('truetype'),
+        url('fonts/icomoon.woff?ivk6cg') format('woff'),
+        url('fonts/icomoon.svg?ivk6cg#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+}
+
+[class^="icon-"],
+[class*=" icon-"] {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'icomoon' !important;
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+
+
+
+    /*******************************/
+    /* アイコンのカスタマイズ  ▼ここから*/
+    /*******************************/
+    position:relative;
+    top:0px;
+    left: 0px;
+
+}
+
+.icon-tree:before {
+    content: "\e900";
+    color:green;
+    position: absolute;
+    font-size: 40px;
+    z-index: 10;
+}
+
+.icon-tree:after {
+    content: "\e901";
+    color:brown;
+    position: absolute;
+    font-size: 37px;
+}
+
+/*******************************/
+/* アイコンのカスタマイズ  ▲ここまで*/
+/*******************************/
